@@ -1,0 +1,6 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="12dp" android:background="#171B27">
+ <TextView android:id="@+id/widget_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="LEVEL UP ⚡" android:textColor="#55E0A2" android:textSize="18sp" android:textStyle="bold" android:gravity="end"/>
+ <TextView android:id="@+id/widget_xp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0 XP" android:textColor="#FFFFFF" android:gravity="end" android:padding="5dp"/>
+ <ListView android:id="@+id/widget_tasks" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:divider="#303747" android:dividerHeight="1dp" android:background="#202635"/>
+ <TextView android:id="@+id/widget_footer" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="פתח את Level Up" android:textColor="#55E0A2" android:gravity="end" android:padding="5dp"/>
+</LinearLayout>

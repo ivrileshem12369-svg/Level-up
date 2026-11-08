@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+ <application android:allowBackup="true" android:label="Level Up" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:supportsRtl="true">
+  <activity android:name=".MainActivity" android:exported="true"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter></activity>
+  <service android:name=".WidgetListService" android:permission="android.permission.BIND_REMOTEVIEWS" android:exported="false"/>
+  <receiver android:name=".LevelUpWidget" android:exported="true" android:label="Level Up – המשימות שלי">
+   <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="com.levelup.app.TOGGLE_TASK"/></intent-filter>
+   <meta-data android:name="android.appwidget.provider" android:resource="@xml/levelup_widget_info"/>
+  </receiver>
+ </application>
+</manifest>
